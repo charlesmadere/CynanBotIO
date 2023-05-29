@@ -12,104 +12,109 @@
   <body>
 
     <div class="container">
-      <h1>CynanBot Commands</h1>
+      <h1 class="mt-3">CynanBot Commands</h1>
 
-      <div class="border-bottom">
-        <h2>!commands</h2>
-        <p>Provides a list of commands that are tailored to your permissions as a mod or user. As in, if you have access to `!supertrivia` or `!bantriviaquestion`, those will show in this list.</p>
+      <div class="mt-5">
+        <h2 class="font-monospace">!commands</h2>
+        <p>Provides a list of commands that are tailored to your permissions as a mod or user. As in, if you have access to <span class="font-monospace">!supertrivia</span> or <span class="font-monospace">!bantriviaquestion</span>, those will show in this list.</p>
         <h3>Example usage</h3>
-        <blockquote class="blockquote">!commands</blockquote>
+        <blockquote class="blockquote"><p class="font-monospace">!commands</p></blockquote>
       </div>
 
-      <div class="border-bottom">
-        <h2>!bantriviaquestion &#60;trivia question emoji&#62;</h2>
-        <p>You can only do this if you have been added to the channel's list of trivia game controllers.</p>
-        <p>Every trivia question is tagged with a consistent emoji at the beginning of the chat message. Use this emoji with the command.</p>
-        <h3>Example usage</h3>
-        <blockquote class="blockquote">!bantriviaquestion 🍌</blockquote>
-      </div>
-
-      <div class="border-bottom">
-        <h2>!supertrivia</h2>
-        <p>You can only do this if you have been added to the channel's list of trivia game controllers.</p>
+      <div class="mt-5">
+        <h2 class="font-monospace">!supertrivia</h2>
+        <p><em>You can only use this command if you have been added to the channel's list of trivia game controllers.</em></p>
         <p>Starts a new super trivia game.</p>
         <h3>Example usage</h3>
         <blockquote class="blockquote">!supertrivia</blockquote>
         <p>Optionally, you can start a super trivia game, while also queue'ing several more in line behind it.</p>
         <h3>Example usage</h3>
-        <blockquote class="blockquote">!supertrivia 3</blockquote>
+        <blockquote class="blockquote"><p class="font-monospace">!supertrivia 3</p></blockquote>
       </div>
 
-      <div class="border-bottom">
-        <h2>!clearsupertriviaqueue</h2>
-        <p>You can only do this if you have been added to the channel's list of trivia game controllers.</p>
+      <div class="mt-5">
+        <h2 class="font-monospace">!givecuteness &#60;username&#62; &#60;amount&#62;</h2>
+        <p><em>You can only use this command if you have been added to the channel's list of trivia game controllers.</em></p>
+        <p>Gives a user some amount of cuteness. Note that <span class="font-monospace">amount</span> can be a negative number. This is mostly intended for situations where a user clearly got a question correct, but failed/stumbled in some other way, like CynanBot didn't recognize the answer as correct for example.</p>
+        <h3>Example usage</h3>
+        <blockquote class="blockquote"><p class="font-monospace">!givecuteness smcharles 20</p></blockquote>
+      </div>
+
+      <div class="mt-5">
+        <h2 class="font-monospace">!bantriviaquestion &#60;trivia emoji&#62;</h2>
+        <p><em>You can only use this command if you have been added to the channel's list of trivia game controllers.</em></p>
+        <p>Every trivia question is tagged with a consistent emoji at the beginning of the chat message. Use this emoji with the command.</p>
+        <h3>Example usage</h3>
+        <blockquote class="blockquote"><p class="font-monospace">!bantriviaquestion 🍌</p></blockquote>
+      </div>
+
+      <div class="mt-5">
+        <h2 class="font-monospace">!clearsupertriviaqueue</h2>
+        <p><em>You can only use this command if you have been added to the channel's list of trivia game controllers.</em></p>
         <p>Completely clears out the queue of pending super trivia games.</p>
-        <p>Explanation: if the `!supertrivia` command is used while another super trivia game is already in progress, that new game will queue up, and will automatically begin once the current super trivia game is finished. This can occur continuously, so that a rather large queue could eventually build up.</p>
+        <p>Explanation: if the <span class="font-monospace">!supertrivia</span> command is used while another super trivia game is already in progress, that new game will queue up, and will automatically begin once the current super trivia game is finished. This can occur continuously, so that a rather large queue could eventually build up.</p>
         <h3>Example usage</h3>
-        <blockquote class="blockquote">!clearsupertriviaqueue</blockquote>
+        <blockquote class="blockquote"><p class="font-monospace">!clearsupertriviaqueue</p></blockquote>
       </div>
 
-      <div class="border-bottom">
-        <h2>!givecuteness &#60;username&#62; &#60;amount&#62;</h2>
-        <p>You can only do this if you have been added to the channel's list of trivia game controllers.</p>
-        <p>Gives a user some amount of cuteness. Note that `&#60;amount&#62;` can be a negative number. This is mostly intended for situations where a user clearly got a question correct, but failed/stumbled in some other way, like CynanBot didn't recognize the answer as correct for example.</p>
+      <div class="mt-5">
+        <h2 class="font-monospace">!addtriviacontroller &#60;username&#62;</h2>
+        <p><em>Only the streamer can use this command.</em></p>
+        <p>Adds a user to the channel's list of trivia game controllers. These users have access to <span class="font-monospace">!supertrivia</span> and <span class="font-monospace">!bantriviaquestion</span>.</p>
         <h3>Example usage</h3>
-        <blockquote class="blockquote">!givecuteness smcharles 20</blockquote>
+        <blockquote class="blockquote"><p class="font-monospace">!addtriviacontroller smcharles</p></blockquote>
       </div>
 
-      <div class="border-bottom">
-        <h2>!addtriviacontroller &#60;username&#62;</h2>
-        <p>Only the streamer can use this command.</p>
-        <p>Adds a user to the channel's list of trivia game controllers. These users have access to `!supertrivia` and `!bantriviaquestion`.</p>
-        <h3>Example usage</h3>
-        <blockquote class="blockquote">!addtriviacontroller smcharles</blockquote>
-      </div>
-
-      <div class="border-bottom">
-        <h2>!gettriviacontrollers</h2>
-        <p>Only the streamer can use this command.</p>
+      <div class="mt-5">
+        <h2 class="font-monospace">!gettriviacontrollers</h2>
+        <p><em>Only the streamer can use this command.</em></p>
         <p>Displays a list of the channel's trivia game controllers.</p>
         <h3>Example usage</h3>
-        <blockquote class="blockquote">!gettriviacontrollers</blockquote>
+        <blockquote class="blockquote"><p class="font-monospace">!gettriviacontrollers</p></blockquote>
       </div>
 
-      <div class="border-bottom">
-        <h2>!removetriviacontroller &#60;username&#62;</h2>
-        <p>Only the streamer can use this command.</p>
+      <div class="mt-5">
+        <h2 class="font-monospace">!removetriviacontroller &#60;username&#62;</h2>
+        <p><em>Only the streamer can use this command.</em></p>
         <p>Removes a user from the channel's list of trivia game controllers.</p>
         <h3>Example usage</h3>
-        <blockquote class="blockquote">!removetriviacontroller smcharles</blockquote>
+        <blockquote class="blockquote"><p class="font-monospace">!removetriviacontroller smcharles</p></blockquote>
       </div>
 
-      <div class="border-bottom">
-        <h2>!triviainfo &#60;trivia question emoji&#62;</h2>
-        <p>You can only do this if you have been added to the channel's list of trivia game controllers.</p>
+      <div class="mt-5">
+        <h2 class="font-monospace">!triviainfo &#60;trivia question emoji&#62;</h2>
+        <p><em>You can only use this command if you have been added to the channel's list of trivia game controllers.</em></p>
         <p>Displays misc debug information about a trivia question. This command is mostly intended for debug and/or question curation purposes.</p>
         <h3>Example usage</h3>
-        <blockquote class="blockquote">!triviainfo 🍎</blockquote>
+        <blockquote class="blockquote"><p class="font-monospace">!triviainfo 🍎</p></blockquote>
       </div>
 
-      <div class="border-bottom">
-        <h2>!addtriviaanswer &#60;trivia question emoji&#62;</h2>
-        <p>You can only do this if you have been added to the channel's list of trivia game controllers.</p>
+      <div class="mt-5">
+        <h2 class="font-monospace">!addtriviaanswer &#60;trivia emoji&#62;</h2>
+        <p><em>You can only use this command if you have been added to the channel's list of trivia game controllers.</em></p>
         <p>Adds an additional answer to a question/answer style trivia question. This is intended to be used for situations where it could be understood that someone answered correctly, but the bot just didn't catch it. For example, someone answered a question with a first and last name, but the question required a first name, middle name, and last name too.</p>
         <h3>Example usage</h3>
-        <blockquote class="blockquote">!addtriviaanswer 🍐 Benjamin Franklin</blockquote>
+        <blockquote class="blockquote"><p class="font-monospace">!addtriviaanswer 🍐 Benjamin Franklin</p></blockquote>
       </div>
 
-      <div class="border-bottom">
-        <h2>!gettriviaanswers &#60;trivia question emoji&#62;</h2>
-        <p>You can only do this if you have been added to the channel's list of trivia game controllers.</p>
+      <div class="mt-5">
+        <h2 class="font-monospace">!gettriviaanswers &#60;trivia emoji&#62;</h2>
+        <p><em>You can only use this command if you have been added to the channel's list of trivia game controllers.</em></p>
         <p>Retrieves the list of additional answers that a trivia question has. This list could be empty.</p>
         <h3>Example usage</h3>
-        <blockquote class="blockquote">!gettriviaanswers 🐬</blockquote>
+        <blockquote class="blockquote"><p class="font-monospace">!gettriviaanswers 🐬</p></blockquote>
       </div>
 
-      <div class="border-bottom">
-        <h2>!deletetriviaanswers &#60;trivia question emoji&#62;</h2>
+      <div class="mt-5">
+        <h2 class="font-monospace">!deletetriviaanswers &#60;trivia emoji&#62;</h2>
+        <p><em>You can only use this command if you have been added to the channel's list of trivia game controllers.</em></p>
         <p>Deletes the list of additional answers that a trivia question has. This command will also show you the additional trivia answers that the question had (if any).</p>
         <h3>Example usage</h3>
-        <blockquote class="blockquote">!deletetriviaanswers 🐅</blockquote>
+        <blockquote class="blockquote"><p class="font-monospace">!deletetriviaanswers 🐅</p></blockquote>
+      </div>
+
+      <div class="mt-5">
+        <p>&nbsp;</p>
       </div>
 
     </div>
