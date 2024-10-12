@@ -48,12 +48,12 @@
       <hr class="mt-5">
 
       <div class="mt-5">
-        <h2 class="font-monospace">!supertrivia</h2>
+        <h2 class="font-monospace">!supertrivia &#60;optional amount parameter&#62;</h2>
         <p><em>You can only use this command if you have been added to the channel's list of trivia game controllers.</em></p>
         <p>Starts a new super trivia game.</p>
         <h3>Example usage</h3>
         <blockquote class="blockquote"><p class="font-monospace">!supertrivia</p></blockquote>
-        <p>Optionally, you can start a super trivia game, while also queue'ing several more in line behind it.</p>
+        <p>Optionally, you can start a super trivia game, while also queue'ing up several more in line behind it.</p>
         <h3>Example usage</h3>
         <blockquote class="blockquote"><p class="font-monospace">!supertrivia 3</p></blockquote>
       </div>
@@ -66,6 +66,60 @@
         <p>Gives a user some amount of cuteness. Note that <span class="font-monospace">amount</span> can be a negative number. This is mostly intended for situations where a user clearly got a question correct, but failed/stumbled in some other way, like CynanBot didn't recognize the answer as correct for example.</p>
         <h3>Example usage</h3>
         <blockquote class="blockquote"><p class="font-monospace">!givecuteness smcharles 20</p></blockquote>
+      </div>
+
+      <hr class="mt-5">
+
+      <div class="mt-5">
+        <h2 class="font-monospace">!cuteness &#60;optional username parameter&#62;</h2>
+        <p>Prints out your own current cuteness, plus the current top 10 leaderboard.</p>
+        <h3>Example usage</h3>
+        <blockquote class="blockquote"><p class="font-monospace">!cuteness</p></blockquote>
+        <p>Optionally, you can query for someone else's cuteness by specifying their username.</p>
+        <h3>Example usage</h3>
+        <blockquote class="blockquote"><p class="font-monospace">!cuteness smcharles</p></blockquote>
+      </div>
+
+      <hr class="mt-5">
+
+      <div class="mt-5">
+        <h2 class="font-monospace">!cutenesschampions</h2>
+        <p>Prints out the channel's cutest users (cumulative). This is essentially a "top 10 of all time" list.</p>
+        <h3>Example usage</h3>
+        <blockquote class="blockquote"><p class="font-monospace">!cutenesschampions</p></blockquote>
+      </div>
+
+      <hr class="mt-5">
+
+      <div class="mt-5">
+        <h2 class="font-monospace">!cutenesshistory &#60;optional username parameter&#62;</h2>
+        <p>Prints out the channel's cutest users for the past 3 months.</p>
+        <h3>Example usage</h3>
+        <blockquote class="blockquote"><p class="font-monospace">!cutenesshistory</p></blockquote>
+        <p>Optionally, you can query for someone else's cuteness history by specifying their username.</p>
+        <h3>Example usage</h3>
+        <blockquote class="blockquote"><p class="font-monospace">!cutenesshistory smcharles</p></blockquote>
+      </div>
+
+      <hr class="mt-5">
+
+      <div class="mt-5">
+        <h2 class="font-monospace">!mycuteness</h2>
+        <p>Prints out your own total cuteness, your best ever cuteness month, and your recent cuteness history.</p>
+        <h3>Example usage</h3>
+        <blockquote class="blockquote"><p class="font-monospace">!mycuteness</p></blockquote>
+      </div>
+
+      <hr class="mt-5">
+
+      <div class="mt-5">
+        <h2 class="font-monospace">!triviascore &#60;optional username parameter&#62;</h2>
+        <p>Prints out your own trivia score.</p>
+        <h3>Example usage</h3>
+        <blockquote class="blockquote"><p class="font-monospace">!triviascore</p></blockquote>
+        <p>Optionally, you can query for someone else's trivia score by specifying their username.</p>
+        <h3>Example usage</h3>
+        <blockquote class="blockquote"><p class="font-monospace">!triviascore smcharles</p></blockquote>
       </div>
 
       <hr class="mt-5">
